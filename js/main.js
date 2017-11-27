@@ -11,15 +11,17 @@ window.onload = function () {
 
 
 function openNav() {
-   console.log("openNav()");
-   isOpen=1;
-   document.getElementById("myTopnav").style.width = "250px";
+    console.log("openNav()");
+    isOpen = 1;
+    document.getElementById("myTopnav").style.width = "250px";
 }
+
+
 function navSwitch() {
     console.log(isOpen);
-    if (isOpen==0){      
+    if (isOpen == 0) {
         openNav();
-    }else{        
+    } else {
         closeNav();
     }
 }
@@ -34,12 +36,12 @@ function closeNav() {
 function show(shown) {
     isOpen = 0;
     console.log("show()" + shown);
-    
+
     document.getElementById("myTopnav").style.width = "0";
 
     document.getElementById(shown).style.display = 'block';
 
-    if (current) {
+    if (current && current != shown) {
         document.getElementById(current).style.display = 'none';
     }
     current = shown;
