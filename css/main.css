@@ -190,15 +190,26 @@ textarea {
 }
 
 .contentArea{
+
     padding-top: 46px;
     color: rgb(255, 38, 0);
     background-color: rgb(125, 0, 125);
     
+    
 }
+
 
 #dogPage{
     background-color:plum;
     height: 100%;
+}
+
+#textArea{
+    padding-left:45%;
+    background-color: rgba(125,125,125, 0.5);
+}
+#textArea h2{
+    padding-top:0%;
 }
 
 
